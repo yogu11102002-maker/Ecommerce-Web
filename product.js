@@ -153,7 +153,7 @@ const products = [
     {
         id: 203,
         category: "electronics",
-        name: "Smart Watch",
+        name: "Headphones",
         description: "AMOLED Display",
         price: 3499,
         oldPrice: 4499,
