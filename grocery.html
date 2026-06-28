@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukaan Vale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="addfirst">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="addsecond">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Tell us what you need" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <div class="nav-second">& Orders</div>
+            </div>
+            <div class="nav-cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+            <div class="nav-cart">
+                <div class="nav-cart">
+                    <div class="nav-cart">
+                        <a href="wishlist.html">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                            Wishlist
+
+                            <span id="wishlist-count">0</span>
+
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-all" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+            <div class="sidebar" id="sidebar">
+
+                <i class="fa-solid fa-xmark close-btn" id="close-btn"></i>
+
+                <h2>Dukaan Vale</h2>
+
+                <a href="index.html">Home</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="cart.html">Cart</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+
+            <div class="panel-ops">
+
+                <a href="grocery.html">
+                    <span>Fresh</span>
+                </a>
+
+                <a href="cloths.html">
+                    <span>Fashion</span>
+                </a>
+
+                <a href="contact.html">
+                    <span>Customer Service</span>
+                </a>
+
+                <a href="electronics.html">
+                    <span>Electronics</span>
+                </a>
+
+            </div>
+
+
+
+            <div class="panel-vouchers">
+
+                <i class="fa-solid fa-ticket-simple"></i>
+
+                <p>Vouchers</p>
+
+            </div>
+
+
+        </div>
+    </header>
+
+    <div>
+        <h1 class="fresh">Fresh</h1>
+        <hr>
+    </div>
+    <div class="hero-section-grocery">
+        <div class="hero-msg-grocery">
+
+            <p><i class="fa-solid fa-shop" style="color: rgb(177, 151, 252);"></i> <i>7 Days Easy Return</i></p>
+            <p><i class="fa-solid fa-money-bill-1-wave" style="color: rgb(177, 151, 252);"></i> <i>Cash on Delivery</i>
+            </p>
+            <p><i class="fa-solid fa-money-bill-trend-up" style="color: rgb(177, 151, 252);"></i> <i>Lowest Prices</i>
+            </p>
+        </div>
+    </div>
+    <section class="category-section">
+
+        <h2>Groceries & Food</h2>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <img src="img/vegetables.png" alt="">
+                <p>Fresh Vegetables</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/fruits.png" alt="">
+                <p>Fresh Fruits</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/flour.png" alt="">
+                <p>Atta, Rice & Grains</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/oil.png" alt="">
+                <p>Oil & Ghee</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/masale.png" alt="">
+                <p>Masala & Spices</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/milk.png" alt="">
+                <p>Milk & Dairy</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/bread.png" alt="">
+                <p>Breads & Bakery</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/cereals.png" alt="">
+                <p>Cereals</p>
+            </div>
+
+            <div class="category-card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/054/280/669/small/two-cups-of-tea-on-wooden-table-photo.jpg"
+                    alt="">
+                <p>Tea & Coffee</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/juice.jpg" alt="">
+                <p>Juices</p>
+            </div>
+
+            <div class="category-card">
+                <img src="img/sauces.png" alt="">
+                <p>Sauces</p>
+            </div>
+
+        </div>
+
+        <section class="products-section">
+
+            <h2>Trending Products</h2>
+
+            <section id="products" class="products"></section>
+
+        </section>
+
+
+        <footer>
+
+            <div class="footer-container">
+
+                <div class="footer-col">
+
+                    <h3>Dukaan Vale</h3>
+
+                    <p>
+                        India's modern shopping destination with thousands of quality products.
+                    </p>
+
+                </div>
+
+                <div class="footer-col">
+
+                    <h3>Company</h3>
+
+                    <a href="#">About Us</a>
+
+                </div>
+
+
+
+            </div>
+
+            </div>
+
+            <div class="copyright">
+
+                © 2026 Dukaan Vale. All Rights Reserved.
+
+            </div>
+
+        </footer>
+
+
+    </section>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        displayProducts("grocery");
+    </script>
+
+    <script src="cart.js"></script>
+    <script src="wishlist.js"></script>
+    <script src="wishlist-page.js"></script>
+    <script src="cart-page.js"></script>
+</body>
+
+</html>
