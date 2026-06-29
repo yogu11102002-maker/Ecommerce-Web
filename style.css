@@ -1011,13 +1011,10 @@ margin:15px;
 
 
 .contact-container{
-
 display:flex;
 justify-content:center;
 gap:30px;
 margin:40px 0;
-flex-wrap:wrap;
-
 }
 
 
