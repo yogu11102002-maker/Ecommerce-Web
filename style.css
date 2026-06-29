@@ -1458,3 +1458,10 @@ background:#5b21b6;
 ::-webkit-scrollbar-corner{
     background:#f3f4f6;
 }
+.nav-cart a{
+    color: white;
+}
+
+.nav-cart a:hover{
+    color: rgb(78, 15, 121);
+}
