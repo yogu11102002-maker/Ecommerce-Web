@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html,
+body{
+    overflow-x:hidden;
+}
+
 .nav {
     height: 80px;
     background-color: rgb(152, 152, 152);
@@ -116,22 +121,28 @@ span {
     justify-content: space-evenly;
 }
 
-.panel-all {
-    font-size: 2rem;
-    justify-content: left;
-
+.panel-all{
+    display:none;
 }
 
 .panel-all:hover{
-    box-shadow: 0 8px 20px rgb(218, 218, 218);
+    color: #bea5e7;
+    box-shadow: 0 8px 20px rgb(114, 114, 114);
 }
 
-.panel-ops span{
+.panel-ops span,
+.panel-ops a{
     text-decoration: none;
     color: white;
     display: inline;
     margin: 6px;
     font-size: 15px;
+}
+
+
+.panel-ops span:hover{
+    color: rgb(255, 127, 246);
+    font-size: 17px;
 }
 
 .panel-vouchers {
@@ -1149,21 +1160,27 @@ background:#5b21b6;
 
 @media (max-width:768px){
 
-.panel-ops{
-    display:none;
-}
+    .panel-all{
+        display:block;
+        font-size:28px;
+        cursor:pointer;
+    }
 
-.panel-vouchers{
-    display:none;
-}
+    .panel-ops{
+        display:none;
+    }
 
-.panel{
-    justify-content:flex-start;
-    padding:12px 20px;
-}
+    .panel-vouchers{
+        display:none;
+    }
 
+    .panel{
+        justify-content:flex-start;
+        align-items:center;
+        padding:10px 15px;
+        height:50px;
+    }
 }
-
 @media(max-width:768px){
 
 .nav{
@@ -1220,7 +1237,7 @@ background:#5b21b6;
 .hero-section-grocery,
 .hero-section-electronics{
 
-    height:100px;
+    height:180px;
     background-size:cover;
     background-position:center;
     margin:0;
@@ -1254,8 +1271,9 @@ background:#5b21b6;
 .hero-msg-grocery,
 .hero-msg-electronics{
 
-    width:95%;
-    font-size:12px;
+    width:85%;
+    font-size:8px;
+    height: 15px;
     padding:8px 10px;
 }
 
