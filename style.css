@@ -1418,3 +1418,114 @@ background:#5b21b6;
     padding:10px;
     font-size:13px;
 }
+/* =========================================
+   CONTACT PAGE RESPONSIVE
+========================================= */
+
+@media (max-width:768px){
+
+.contact-section{
+    width:95%;
+    margin:30px auto;
+}
+
+.contact-section h1{
+    font-size:30px;
+}
+
+.contact-section > p{
+    font-size:14px;
+    margin:10px 0 25px;
+}
+
+.contact-container{
+    gap:15px;
+}
+
+.contact-card{
+    width:100%;
+    max-width:320px;
+    padding:20px;
+    border-radius:15px;
+}
+
+.contact-card i{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.contact-card h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.contact-card p{
+    font-size:13px;
+    line-height:1.5;
+    word-break:break-word;
+}
+
+.contact-form{
+    width:100%;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:12px;
+    font-size:14px;
+}
+
+.contact-form textarea{
+    height:100px;
+}
+
+.contact-form button{
+    padding:12px;
+    font-size:16px;
+}
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width:480px){
+
+.contact-section h1{
+    font-size:26px;
+}
+
+.contact-section > p{
+    font-size:12px;
+}
+
+.contact-card{
+    padding:15px;
+}
+
+.contact-card i{
+    font-size:24px;
+}
+
+.contact-card h3{
+    font-size:16px;
+}
+
+.contact-card p{
+    font-size:12px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    font-size:13px;
+    padding:10px;
+}
+
+.contact-form button{
+    font-size:15px;
+    padding:11px;
+}
+
+}
