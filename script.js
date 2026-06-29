@@ -159,7 +159,7 @@ const products = [
     {
         id: 203,
         category: "electronics",
-        name: "Headphones",
+        name: "Smart Watch",
         description: "AMOLED Display",
         price: 3499,
         oldPrice: 4499,
@@ -443,3 +443,32 @@ searchInput.addEventListener("keypress",(e)=>{
     }
 
 });
+const sendBtn = document.getElementById("sendBtn");
+
+if (sendBtn) {
+
+    sendBtn.addEventListener("click", function () {
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (name === "" || email === "" || message === "") {
+            alert("Please fill all the fields.");
+            return;
+        }
+
+        alert(
+            `Thank you, ${name}! 😊
+
+Your message has been received successfully.
+
+Our Dukaan Vale support team will contact you soon.`
+        );
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+    });
+
+}
